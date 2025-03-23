@@ -1,0 +1,447 @@
+/* Style du header */
+header {
+    background-color: black;  /* Couleur de fond noir */
+    color: white;  /* Texte en blanc */
+    display: flex;  /* Alignement en ligne */
+    justify-content: space-between; /* Espacement entre le nom et la navigation */
+    align-items: center; /* Centrage vertical */
+    padding: 15px 50px; /* Espacement intérieur */
+}
+
+/* Style du titre (nom) */
+header h1 {
+    margin: 0;  /* Supprime les marges par défaut */
+    font-size: 24px;
+}
+
+/* Style de la navigation */
+nav ul {
+    list-style: none; /* Supprime les puces des listes */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Affichage en ligne */
+}
+
+/* Style des liens */
+nav ul li {
+    margin-left: 20px; /* Espacement entre les liens */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Texte en blanc */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+/* Effet au survol */
+nav ul li a:hover {
+    color: rgb(31, 219, 31); /* Change la couleur au survol */
+}
+
+/* Section Accueil */
+#accueil {
+    display: flex;
+    align-items: center; /* Aligner verticalement */
+    justify-content: space-between; /* Séparer le texte et l’image */
+    padding: 50px;
+    background-color: #blanc; /* Fond blanc */
+
+    #accueil {
+        background-color: #3d3c3c; /* Fond gris */
+    padding: 50px;
+    }
+}
+    
+
+/* Contenu de la section accueil */
+.accueil-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Texte à gauche */
+.accueil-content .text {
+    max-width: 50%;
+}
+
+/* Styles des titres et du texte */
+.accueil-content h2 {
+    font-size: 28px;
+    color: #121312;
+}
+
+.accueil-content h3 {
+    font-size: 24px;
+    color: #1a1b1a;
+}
+
+.accueil-content p {
+    font-size: 18px;
+    color: #353635;
+}
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(33, 221, 27);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: blanc(221, 216, 216, 0.856);
+}
+
+/* Image à droite */
+.accueil-content .image {
+    max-width: 50%;
+    text-align: right; /* Aligner l’image à droite */
+}
+
+.accueil-content .image img {
+    width: 400px; /* Taille de l'image */
+    border-radius: 10px;
+}
+
+
+/* Contenu de À propos (Texte à gauche, Image à droite) */
+.about-content {
+    display: flex;
+    align-items: center; /* Alignement vertical */
+    justify-content: space-between; /* Séparer le texte et l'image */
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Style du texte dans À propos */
+.about-content .text {
+    max-width: 60%;
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Image de profil en cercle et petite taille */
+.about-content .image img {
+    width: 150px; /* Petite taille */
+    height: 150px;
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Ajuste l'image */
+    box-shadow: 0px 0px 10px rgba(7, 226, 43, 0.2); /* Ombre légère */
+}
+
+/* Section Mes Projets - Fond gris */
+#projets {
+    background-color: #f4f4f4; /* Fond gris clair */
+    padding: 50px;
+}
+
+/* Titre de la section - Aligné à gauche */
+#projets h2 {
+    color: #4CAF50; /* Vert */
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left; /* Alignement à gauche */
+    margin-left: 50px; /* Décalage vers la gauche */
+}
+
+/* Conteneur des cartes */
+.projects-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre les cartes */
+    align-items: stretch; /* Alignement en hauteur */
+    gap: 20px; /* Espacement entre les cartes */
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Style des cartes */
+.project-card {
+    background-color: #ffffff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* 3 cartes sur une ligne */
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px; /* Hauteur uniforme */
+}
+
+/* Effet au survol */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style du bouton */
+.project-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: auto; /* Positionne le bouton en bas */
+    transition: background 0.3s;
+}
+
+/* Effet au survol du bouton */
+.project-card .btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive - Cartes passent en colonne sur mobile */
+@media screen and (max-width: 900px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+}
+
+/* Section Mes Compétences */
+#competences {
+    background-color: #ffffff; /* Fond blanc */
+    padding: 50px;
+}
+
+/* Titre de la section */
+#competences h2 {
+    color: #4CAF50;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+/* Conteneur des compétences */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Boîte de compétences */
+.skills-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre des compétences */
+.skills-box h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Liste des compétences */
+.skills-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-box ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Styles des barres de progression */
+.skill {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Barre de progression plus fine */
+.progress-bar {
+    width: 100%;
+    height: 5px; /* Hauteur réduite */
+    background-color: #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 1s ease-in-out;
+}
+
+/* Responsive - En colonne sur mobile */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Section Contact */
+#contact {
+    background-color: #000000; /* Fond noir */
+    padding: 50px;
+    text-align: center;
+}
+
+/* Titre de la section Contact en vert */
+#contact h2 {
+    color: #4CAF50; /* Vert */
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Texte d'introduction en blanc */
+.contact-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff; /* Texte en blanc */
+}
+
+/* Formulaire */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Groupes pour aligner les champs sur une ligne */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espacement entre les champs */
+}
+
+/* Champs du formulaire en blanc et bien alignés */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #4CAF50; /* Bordure verte */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff; /* Fond blanc */
+    color: #000000; /* Texte noir */
+}
+
+/* Zone de texte plus grande */
+.contact-form textarea {
+    height: 120px;
+    resize: none; /* Empêcher le redimensionnement */
+}
+
+/* Bouton Envoyer */
+.contact-form .btn {
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Effet au survol */
+.contact-form .btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive - Empiler les champs sur mobile */
+@media screen and (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+}
+
+/* Pied de page */
+footer {
+    background-color: #eee4e4; /* Fond noir */
+    color: #1b1919; /* Texte blanc */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+/* Style pour mettre le texte sur une seule ligne */
+.footer-content p {
+    display: inline; /* Garde le texte en ligne */
+}
+
+/* Animation d'apparition des sections */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Vert */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.btn-cv:hover {
+    background-color: #45a049;
+}
+
+// Effet de survol sur les projets
+document.querySelectorAll(".project-card").forEach(card => {
+    card.addEventListener("mouseover", function() {
+        this.style.transform = "scale(1.05)";
+        this.style.boxShadow = "0px 4px 15px rgba(0, 0, 0, 0.3)";
+    });
+
+    card.addEventListener("mouseout", function() {
+        this.style.transform = "scale(1)";
+        this.style.boxShadow = "0px 4px 8px rgba(0, 0, 0, 0.2)";
+    });
+});

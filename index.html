@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - MODEH Koffi Apélété</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+   
+<body>
+    <body>
+
+        <header>
+            <h1>MODEH Koffi Apélété</h1>
+            <nav>
+                <ul>
+                    <li><a href="#index">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="accueil">
+            <div class="accueil-content">
+                <div class="text">
+                    <h2>Je suis MODEH Koffi Apélété, Urbaniste & Développeur Web en Devenir</h2>
+                    <p>Passionné par l’aménagement durable et les technologies du web.</p>
+                    <br>
+                    <a href="about.html" class="btn">Voir mes Projets</a>
+                </div>
+                <br>
+                <div class="image">
+                    <img src="Dev-Web.jpeg" alt="Illustration développement web">
+                </div>
+            </div>
+        </section>
+    
+        <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos</h2>
+        <div class="about-content">
+            <div class="text">
+                <p>Je m'appelle <strong>MODEH Koffi Apélété</strong>, passionné par la création de solutions urbaines durables et le développement web.</p>
+                <p>Je suis actuellement étudiant en <strong>Master en Prospective Territoriale et Planification Urbaine</strong> au CERViDA-DOUNEDON et je me forme en développement web grâce au programme <strong>D-CLIC de l’OIF</strong>.</p>
+                <p>Je cherche à <strong>combiner urbanisme et numérique</strong> pour développer des outils innovants pour les villes africaines.</p>
+                <a href="cv_modeh_koffi_Apélété.pdf.pdf" download class="btn-cv">Télécharger mon CV</a>
+            </div>
+    
+            <div class="image">
+                <img src="Ma_Photo.JPG" alt="Photo de MODEH Koffi Apélété">
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith("#")) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, // Ajuste la position
+                        behavior: 'smooth' // Défilement fluide
+                    });
+                }
+            });
+        });
+    </script>
+    
+    <!-- Section Mes Projets -->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="projects-container">
+            <!-- Projet 1 -->
+            <div class="project-card">
+                <h3>Cartographie et planification urbaine</h3>
+                <p>Utilisation des SIG pour l'analyse et l'optimisation des espaces urbains.</p>
+                <a href="#" class="btn">Voir</a>
+            </div>
+    
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <h3>Développement d’un mini-site web interactif</h3>
+                <p>Création d'un site web dynamique en HTML, CSS et JavaScript.</p>
+                <a href="#" class="btn">Voir</a>
+            </div>
+    
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <h3>Analyse environnementale et SIG</h3>
+                <p>Évaluation des impacts environnementaux avec les outils SIG.</p>
+                <a href="#" class="btn">Voir</a>
+            </div>
+        </div>
+    </section>
+            
+    <!-- Section Mes Compétences -->
+<section id="competences">
+    <h2>Mes Compétences</h2>
+    <div class="skills-container">
+        <!-- Soft Skills avec barres de progression -->
+        <div class="skills-box">
+            <h3>Soft Skills</h3>
+            <div class="skill">
+                <p>Gestion de projet</p>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Résolution de problèmes</p>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Adaptabilité</p>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Français (Natif)</p>
+                <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Anglais (Intermédiaire)</p>
+                <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Collecte et traitement de données géographiques</p>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Gestion des réseaux sociaux et création de contenu</p>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Travail en équipe</p>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Hard Skills avec barres de progression réduites -->
+        <div class="skills-box">
+            <h3>Hard Skills</h3>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar"><div class="progress" style="width: 30%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar"><div class="progress" style="width: 25%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar"><div class="progress" style="width: 15%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>SIG (QGIS, ArcGIS)</p>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>VS Code</p>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Microsoft Office</p>
+                <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p class="contact-text">Vous avez un projet en tête ? N’hésitez pas à me contacter !</p>
+    
+    <form action="#" method="POST" class="contact-form">
+        <!-- Prénom et Nom sur la même ligne -->
+        <div class="form-group">
+            <input type="text" name="prenom" placeholder="Prénom" required>
+            <input type="text" name="nom" placeholder="Nom" required>
+        </div>
+
+        <!-- Téléphone et Email sur la même ligne -->
+        <div class="form-group">
+            <input type="tel" name="telephone" placeholder="Numéro de téléphone" required>
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+        
+        <!-- Sujet en dessous -->
+        <input type="text" name="sujet" placeholder="Sujet" required>
+        
+        <!-- Grand champ Message -->
+        <textarea name="message" placeholder="Votre message..." rows="5" required></textarea>
+        
+        <!-- Bouton Envoyer -->
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+</section>
+
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.getAttribute('href').startsWith("#")) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50, // Ajuste la position
+                    behavior: 'smooth' // Défilement fluide
+                });
+            }
+        });
+    });
+</script>
+
+<!-- Pied de page -->
+<footer>
+    <div class="footer-content">
+        <p>Designed by MODEH Koffi Apélété with HTML, CSS, JS | © Tous droits réservés - 2025</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
